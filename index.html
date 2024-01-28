@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PORTFOLIO</title>
+	<style type="text/css">
+		*{
+			scroll-behavior: smooth;
+			
+
+		}
+		html body{
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			overflow-x: hidden;
+			scroll-behavior: smooth;
+		}
+		.nav{
+			height: 75px;
+			width: 100%;
+			background-color: white;
+			position:absolute;
+			top:0px;
+		}
+		.nav h1{
+			float: left;
+			margin-left: 20px;
+			color: black;
+		}
+		.nav span{
+			float: right;
+			margin-right: 40px;
+			margin-top: 40px;
+			color: black;
+			font-family:Oxygen;	
+
+		}
+		.nav span:hover{
+			color:gray;
+		}
+		.background{
+			height: 550px;
+			width: 100%;
+			background-image: url("images/banner.png");
+			background-size: cover;
+		}
+		.background h1{
+			position: absolute;
+			top: 250px;
+			left: 500px;
+			color: white;
+		}
+		.first1{
+			height: 45px;
+			width: 120px;
+			background-color: blue;
+			border: none;
+			position: absolute;
+			top: 360px;
+			left: 520px;
+			color: WHITE;
+			border-radius: 10px;
+			transition: 2s;
+			font-weight: bold;
+		}
+		.first1:hover{
+			transform: translateY(-4px);
+		}
+		.sec2{
+			height: 45px;
+			width: 120px;
+			background-color: whitesmoke;
+			border: 4px solid white;
+			position: absolute;
+			top: 360px;
+			left: 680px;
+			font-weight: bold;
+			color: WHITE;
+			border-radius: 10px;
+			transition: 2s;
+			color: blue;
+		}
+			.sec2:hover{
+			transform: translateY(-4px);
+		}
+		.about{
+			height: 600px;
+			width: 100%;
+			background-color:white;
+
+		}
+		.about img{
+			height: 400px;
+			width: 600px;
+			position: relative;
+			top: 100px;
+			left: 47px;
+			border-radius: 100px;
+		}
+		.about h3{
+			position: relative;
+			top:-300px;
+			left:810px;
+			font-size: 25px;
+			color: grey;
+		}
+		.about h1{
+			position: relative;
+			top:-280px;
+			left:810px;
+			font-size: 35px;
+			color: skyblue;
+		}
+		.about p{
+			position: relative;
+			top:-280px;
+			left:810px;
+			color: black;
+			font-size: 20px;
+		}
+		.about ul li{
+			position: relative;
+			top:-260px;
+			left:810px;
+			color: black;
+			font-size: 32px;
+		}
+		.about button{
+			height:50px;
+			width: 150px;
+			background-color: red;
+			position: relative;
+			top: -230px;
+			left: 800px;
+			border: none;
+			border-radius: 10px;
+			color: white;
+		}
+		.main{
+			height:1200px;
+			width: 100%;
+			background-color: white;	
+		}
+		.main h3{
+			padding-top: 100px;
+			padding-left: 100px;
+		}
+		.main h1{
+			padding-left: 100PX;
+		}
+		.card{
+			height: 400px;
+			width: 400px;
+			border: 1px dotted black;
+			margin-left: 30px;
+			margin-top: 60px;
+			transition: 2s;
+		}
+		.card:hover{
+			transform: translateY(-10px);
+			box-shadow: 3px 1px 40px 2px blue;
+		}
+		.card img{
+			height: 50px;
+			width: 50px;
+			margin-left: 160px;
+			margin-top: 22px;
+		}
+		.card h1{
+			margin-left: -13px;
+		}
+		.card p{
+			font-size: 24px;
+			text-align: center;
+		}
+		.card button{
+			height: 50px;
+			width: 120px;
+			background-color: blue;
+			border-radius: 15px;
+			color: white;
+			border: none;
+			margin-left: 140px;
+		}
+		.card1{
+			height: 400px;
+			width: 400px;
+			border: 1px dotted black;
+			margin-left: 50px;
+			margin-top: 60px;
+			position: relative;
+			top: -462px;
+			left: 425px;
+			transition: 2s;
+		}
+		.card1:hover{
+			transform: translateY(-10px);
+			box-shadow: 3px 1px 40px 2px blue;
+		}
+		.card1 img{
+			height: 50px;
+			width: 50px;
+			margin-left: 160px;
+			margin-top: 22px;
+		}
+		.card1 h1{
+			margin-left: -13px;
+		}
+		.card1 p{
+			font-size: 24px;
+			text-align: center;
+		}
+		.card1 button{
+			height: 50px;
+			width: 120px;
+			background-color: blue;
+			border-radius: 15px;
+			color: white;
+			border: none;
+			margin-left: 140px;
+		}
+			.card2{
+			height: 400px;
+			width: 400px;
+			border: 1px dotted black;
+			margin-left: 50px;
+			margin-top: 60px;
+			position: relative;
+			top: -923px;
+			left: 865px;
+			transition: 2s;
+		}
+		.card2:hover{
+			transform: translateY(-10px);
+			box-shadow: 3px 1px 40px 2px blue;
+		}
+		.card2 img{
+			height: 50px;
+			width: 50px;
+			margin-left: 160px;
+			margin-top: 22px;
+		}
+		.card2 h1{
+			margin-left: -13px;
+		}
+		.card2 p{
+			font-size: 24px;
+			text-align: center;
+		}
+		.card2 button{
+			height: 50px;
+			width: 120px;
+			background-color: blue;
+			border-radius: 15px;
+			color: white;
+			border: none;
+			margin-left: 140px;
+		}
+		.card3{
+			height: 400px;
+			width: 400px;
+			border: 1px dotted black;
+			margin-left: 50px;
+			margin-top: 60px;
+			position: relative;
+			top: -925px;
+			left: -18px;
+			transition: 2s;
+		}
+		.card3:hover{
+			transform: translateY(-10px);
+			box-shadow: 3px 1px 40px 2px blue;
+		}
+		.card3 img{
+			height: 50px;
+			width: 50px;
+			margin-left: 160px;
+			margin-top: 22px;
+		}
+		.card3 h1{
+			margin-left: -13px;
+		}
+		.card3 p{
+			font-size: 24px;
+			text-align: center;
+		}
+		.card3 button{
+			height: 50px;
+			width: 120px;
+			background-color: blue;
+			border-radius: 15px;
+			color: white;
+			border: none;
+			margin-left: 140px;
+		}
+		.card4{
+			height: 400px;
+			width: 400px;
+			border: 1px dotted black;
+			margin-left: 50px;
+			margin-top: 60px;
+			position: relative;
+			top: -1387px;
+			left: 427px;
+			transition: 2s;
+		}
+		.card4:hover{
+			transform: translateY(-10px);
+			box-shadow: 3px 1px 40px 2px blue;
+		}
+		.card4 img{
+			height: 50px;
+			width: 50px;
+			margin-left: 160px;
+			margin-top: 22px;
+		}
+		.card4 h1{
+			margin-left: -13px;
+		}
+		.card4 p{
+			font-size: 24px;
+			text-align: center;
+		}
+		.card4 button{
+			height: 50px;
+			width: 120px;
+			background-color: blue;
+			border-radius: 15px;
+			color: white;
+			border: none;
+			margin-left: 140px;
+		}
+		.card5{
+			height: 400px;
+			width: 400px;
+			border: 1px dotted black;
+			margin-left: 50px;
+			margin-top: 60px;
+			position: relative;
+			top: -1849px;
+			left: 866px;
+			transition: 2s;
+		}
+		.card5:hover{
+			transform: translateY(-10px);
+			box-shadow: 3px 1px 40px 2px blue;
+		}
+		.card5 img{
+			height: 50px;
+			width: 50px;
+			margin-left: 160px;
+			margin-top: 22px;
+		}
+		.card5 h1{
+			margin-left: -13px;
+		}
+		.card5 p{
+			font-size: 24px;
+			text-align: center;
+		}
+		.card5 button{
+			height: 50px;
+			width: 120px;
+			background-color: blue;
+			border-radius: 15px;
+			color: white;
+			border: none;
+			margin-left: 140px;
+		}
+		.contact{
+			height: 800px;
+			width: 100%;
+			background-color: black;
+		}
+		.touch{
+			height: 600px;
+			width: 1100px;
+			background-color: white;
+			position: relative;
+			top: 50px;
+			left: 130px;
+		}
+		.touch h3{
+			padding-top: 50px;
+			padding-left: 470px;
+		}
+		.touch h1{
+			padding-top: 10px;
+			padding-left: 445px;
+			font-size: 42px;
+		}
+		.touch input{
+			height: 35px;
+			width: 500px;
+			background-color: #F5F5F5;
+			border: 0px;
+			border-radius: 10px;
+			position: relative;
+			left: 50px;
+		}
+		#ema{
+			width: 1010px;
+		}
+		#mess{
+			height: 150px;
+			width: 1010px;
+			text-align: center;
+
+		}
+		.touch button{
+			height: 60px;
+			width: 150px;
+			background-color: darkblue;
+			color: white;
+			border: 0px;
+			border-radius: 10px;
+			margin-left: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<h1>AT</h1>
+		<a href="#details"><span>CONTACT</span></a>
+		<a href="#services"><span>SERVICE</span></a>
+		<a href="#aboutus"><span>ABOUT</span></a>
+		<a href="first.html"><span>HOME</span></a>
+	</div>
+	<div class=" background">
+		<h1>I'M ABHISHEK TIWARI<br> A WEBSITE DEVELOPER</h1>
+		<button class="first1">Services</button>
+		<button class="sec2">Hire Me</button>
+	</div>
+	<div class="about">
+		<div id="aboutus">
+		<img src="images/laptop.jpg">
+		<h3>About Us</h3>
+		<h1>We Are Expert In Web</h1>
+		<p>A small river named Duden flows by their place and supplies it<br> with the necessary regelialia. It is a paradisematic country, in<br> which roasted parts of sentences fly into your mouth.</p>
+		<ul>
+			<li>Design</li>
+			<li>Development</li>
+			<li>eCommerce</li>
+			<li>Mobile Apps</li>
+			<li>Copywriting</li>
+			<li>SEO</li>
+		</ul>
+		<a href="youtube.com"><button>Watch video</button></a>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="main">
+		<h3 id="services">WHAT WE DO</h3>
+		<h1>Lorem ipsum dolor sit amet<br>consectetur adipisicing elit</h1>
+		<div class="card">
+			<img src="images/webdesign.png">
+			<h1>Website Designing</h1>
+			<p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Nam nostrum ducimus<br>temporibus, quod ipsa fuga fugiat<br> deserunt.</p>
+			<button>Learn More</button>
+		</div>
+		<div class="card1">
+			<img src="images/coding.png">
+			<h1>Website Development</h1>
+			<p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Nam nostrum ducimus<br>temporibus, quod ipsa fuga fugiat<br> deserunt.</p>
+			<button>Learn More</button>
+		</div>
+		<div class="card2">
+			<img src="images/mobiledevelopment.png">
+			<h1>Web Apps</h1>
+			<p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Nam nostrum ducimus<br>temporibus, quod ipsa fuga fugiat<br> deserunt.</p>
+			<button>Learn More</button>
+
+		</div>
+		<div class="card3">
+			<img src="images/app.png">
+			<h1>Mobile Apps</h1>
+			<p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Nam nostrum ducimus<br>temporibus, quod ipsa fuga fugiat<br> deserunt.</p>
+			<button>Learn More</button>
+			
+		</div>
+		<div class="card4">
+			<img src="images/content-copy.png">
+			<h1>Copywriting</h1>
+			<p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Nam nostrum ducimus<br>temporibus, quod ipsa fuga fugiat<br> deserunt.</p>
+			<button>Learn More</button>
+			
+		</div>
+		<div class="card5">
+			<img src="images/SEO.png">
+			<h1>SEO</h1>
+			<p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Nam nostrum ducimus<br>temporibus, quod ipsa fuga fugiat<br> deserunt.</p>
+			<button>Learn More</button>
+			
+		</div>
+	</div>
+	<div class="contact">
+		<div class="touch">
+			<h3 id="details">GET IN TOUCH</h3>
+			<h1>Contact Us</h1>
+			<div class="yoe">
+			<form id="detail">
+				<input type="Text" name="name" placeholder="FIRST NAME" required>
+				<input type="text" name="name" placeholder="LAST NAME">
+				<br>
+				<br>
+				<br>
+				<input type="email" name="email" placeholder="EMAIL ADDRESS" id="ema">
+				<br>
+				<br>
+				<input type="text" name="Message" placeholder="MESSAGE" id="mess" >
+				<br>
+				<br>
+				<button>SEND MESSAGE</button>
+			</form>
+			</div>
+
+		</div>
+		
+	</div>
+	
+</body>
+</html>
